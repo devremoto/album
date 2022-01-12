@@ -1,0 +1,15 @@
+<ngb-pagination #pagination style="bottom:0"
+  *ngIf="paging.totalCount > paging.size"
+  [boundaryLinks]="true"
+  [pageSize]="paging.size"
+  [maxSize]="paging.maxSize"
+  [collectionSize]="paging.totalCount"
+  [(page)]="paging.number"
+  class="pagination"
+  (pageChange)="changePageEvent($event)"
+  [rotate]="true"
+  previousText="&lsaquo;"
+  nextText="&rsaquo;"
+  firstText="&laquo;"
+  lastText="&raquo;">
+</ngb-pagination>

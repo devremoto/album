@@ -1,0 +1,27 @@
+<div #container [id]="id" class="thumb" (click)="show()" [class.pointer]="imagePath">
+  <span class="remove" *ngIf="content || url" title="excluir imagem {{name}}" (click)="remove($event)">
+    <i class="fa fa-trash text-danger  pr-1"></i>
+  </span>
+  <ng-content></ng-content>
+  <canvas #canvas [id]="canvasId" [hidden]="background"></canvas>
+</div>
+
+<section *ngIf="opened" class="row m-0 justify-content-center align-items-center">
+  <div class="modal-area">
+    <div class="card text-center">
+      <span>{{name}}</span>
+      <div class="card-body ">
+
+        <img *ngIf="imagePath" [src]="imagePath">
+      </div>
+      <div class="card-footer p-3 m-0">
+        <button
+          class="w-100 "
+          [class.btn-alta-enfase-verde]="true"
+          (click)="close()">
+          {{btnMsg}}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

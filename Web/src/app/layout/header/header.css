@@ -1,0 +1,9 @@
+.avatar-container {
+  float: left;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown-item {
+  cursor: pointer;
+}

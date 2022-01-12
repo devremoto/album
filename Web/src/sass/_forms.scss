@@ -1,0 +1,663 @@
+/* Estrutura */
+
+// -----------------------------------    INPUT -----------------------------------
+.input-container {
+  position: relative;
+  input {
+    background-color: transparent;
+    border: 1px solid $preto-24;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+    padding-left: 13px;
+    + label {
+      color: $primario-base;
+    }
+    &:hover {
+      border: 2px solid $primario-base;
+      + label {
+        color: $primario-base;
+      }
+    }
+    &:focus {
+      border: 1px solid $primario-base !important;
+      + label {
+        color: $primario-base !important;
+      }
+    }
+    &:read-only {
+      color: $cinza-base;
+    }
+    &.ng-touched.ng-invalid {
+      border: 1px solid $erro-label !important;
+
+      & + label {
+        color: $erro-label !important;
+      }
+    }
+  }
+
+  label {
+    top: 8px;
+    left: 10px;
+    right: 0;
+    color: $preto-24;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: $font-normal;
+    padding: {
+      top: 29px;
+      bottom: 16px;
+    }
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+  }
+
+  input,
+  label {
+    width: 100%;
+    height: 43px;
+    font-size: 16px;
+  }
+
+  label {
+    height: fit-content;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .ng-untouched + label,
+	.ng-pristine + label {
+		top: 8px;
+    font-size: $font-normal
+	}
+
+  .ng-touched.ng-invalid {
+    border: 1px solid $erro-label;
+
+    & + label {
+      color: $erro-label;
+    }
+  }
+
+  .ng-valid + label,
+  input:focus + label {
+    font-size: 0.8rem;
+    top: -12px;
+    pointer-events: none;
+    span {
+      padding: {
+        left: 5px;
+        right: 5px;
+      }
+      background-color: $branco-base;
+    }
+  }
+
+  .ng-untouched.ng-invalid + label,
+  .ng-touched.ng-invalid + label,
+  input:focus + label {
+    font-size: 0.8rem;
+    top: -12px;
+    pointer-events: none;
+    span {
+      padding: {
+        left: 5px;
+        right: 5px;
+      }
+      background-color: #fff;
+    }
+  }
+	
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+}
+
+//validações input
+.erro-input {
+  transition: all 0.3s ease;
+  color: $erro-label;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+// -----------------------------------  SELECT -----------------------------------
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid $preto-24 !important;
+  border-radius: 4px;
+  background: $branco-base;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: $cinza-base;
+  font-size: $font-button;
+  padding-left: 13px;
+  cursor: pointer;
+  + label {
+    color: $primario-base !important;
+  }
+  &:hover {
+    border: 1px solid $primario-hover !important;
+    & + label {
+      color: $primario-hover;
+    }
+    &:focus {
+      & + label {
+        color: $primario-hover;
+      }
+    }
+  }
+  &::-ms-expand {
+    //correção IE
+    display: none;
+  }
+  &.ng-touched.ng-invalid {
+    border: 1px solid $erro-label !important;
+
+    & + label {
+      color: $erro-label !important;
+    }
+  }
+  // &:disabled {
+  //   background-color: $cinza-light !important;
+  //   border-color: #787878 !important;
+  //   color: $primario-base !important;
+  //   & + label {
+  //     color: #787878 !important;
+  //   }
+  // }
+}
+
+.select {
+  position: relative;
+  display: flex;
+  height: $btn-size;
+  line-height: 2.5;
+  background: $branco-base;
+
+  &:hover {
+    &::after {
+      color: $primario-hover;
+    }
+
+  }
+
+  &::after {
+    content: "\25BC";
+    font-size: 11px;
+    color: $primario-base;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+  }
+
+  label {
+    font-size: 13px;
+    top: -15px;
+    left: 10px;
+    height: fit-content;
+    background-color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    right: 0;
+    color: $cinza-base;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+    width: fit-content;
+  }
+
+
+}
+
+.select-secundario {
+  position: relative;
+  display: flex;
+  height: $btn-size;
+  line-height: 2.5;
+  background: transparent;
+
+  select {
+    padding-top: 9px;
+    padding-left: 10px;
+    color: $primario-base;
+    font-weight: $weight-semi-bold;
+    border: 1px solid $primario-base !important;
+    height: 45px;
+    background-color: transparent;
+
+    &:disabled {
+      background-color: $cinza-light !important;
+    }
+  }
+
+  &:hover {
+    &::after {
+      color: $primario-hover;
+    }
+
+  }
+
+  &::after {
+    content: "\25BC";
+    font-size: 11px;
+    color: $primario-base;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+  }
+
+  label {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 0;
+    margin: 0;
+    top: 4px;
+    left: 10px;
+    right: 0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+    height: fit-content;
+    width: fit-content;
+  }
+}
+
+// -----------------------------------  CHECKBOX -----------------------------------
+
+/* The container */
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: $font-normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border: 1px solid $cinza-darkness;
+    border-radius: 3px;
+    &:after {
+      animation: checkbox-check 125ms 250ms cubic-bezier(0.4, 0, 0.23, 1) forwards;
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  &:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  input:checked ~ .checkmark {
+    animation: shrink-bounce 200ms cubic-bezier(0.4, 0, 0.23, 1);
+    background-color: $primario-base;
+    border: 0;
+  }
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkmark:after {
+    left: 1px;
+    top: 11px;
+    width: 5px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transform-origin: 0% 100%;
+    //animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
+  }
+}
+
+// checkbox readonly
+
+.checkbox-readonly {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: $font-normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    border: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  &:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  input:checked ~ .checkmark {
+    background-color: transparent;
+    border: 0;
+  }
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkmark:after {
+    left: 1px;
+    top: 11px;
+    width: 5px;
+    height: 16px;
+    border: solid $sucesso-base;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transform-origin: 0% 100%;
+  }
+}
+
+@keyframes shrink-bounce {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(0.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes checkbox-check {
+  0% {
+    width: 0;
+    height: 0;
+    border-color: #fff;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  33% {
+    width: 5px;
+    height: 0;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  100% {
+    width: 5px;
+    height: 16px;
+    border-color: #fff;
+    transform: translate3d(0, -16px, 0) rotate(45deg);
+  }
+}
+
+
+
+// -----------------------------------  RADIO BUTTON -----------------------------------
+
+.radio-container {
+	display: flex;
+	align-items: center;
+  position: relative;
+	padding-left: 35px;
+	margin-bottom: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+	user-select: none;
+	font-size: $font-normal;
+	color: $cinza-disabled;
+  & input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: $branco;
+    border-radius: 50%;
+    border: 2px solid $cinza-disabled;;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+  .desc {
+    line-height: 15pt;
+  }
+}
+
+
+
+.radio-container:hover input ~ .checkmark {
+  background-color: $primario-lighter-hover;
+}
+
+.radio-container input:checked ~ .checkmark {
+	background-color: $branco;
+	border: 2px solid $primario-base;
+}
+
+.radio-container input:checked ~ .desc{
+	color: $cinza-base;
+	font-weight: $weight-semi-bold;
+}
+
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $primario-base;
+}
+
+// -----------------------------------  TEXT AREA -----------------------------------
+
+.text-area {
+  textarea {
+    background-color: transparent;
+    border: 1px solid $preto-24;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+    padding-left: 13px;
+    &:hover {
+      border: 1px solid $primario-base;
+      & + span {
+        color: $primario-base;
+      }
+    }
+    &:focus {
+      border: 1px solid $primario-base;
+      & + span {
+        color: $primario-base;
+      }
+    }
+    &:read-only {
+      color: $cinza-base;
+    }
+  }
+  span {
+    position: absolute;
+    top: -11px;
+    left: 24px;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.8rem;
+    color: $primario-base;
+    pointer-events: none;
+    padding: {
+      left: 5px;
+      right: 5px;
+    }
+    background-color: $branco-base;
+  }
+}
+
+
+//INPUT SECUNDARIO COM O LABEL DENTRO DO INPUT
+
+.input-secundario {
+
+  position: relative;
+
+  input {
+    border: 1.1px solid $sucesso-base;
+    border-radius: 6px;
+    background-color: transparent;
+    height: 45px;
+    padding-top: 13px;
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+    font-weight: $weight-semi-bold;
+    color: $sucesso-base;
+
+    &:focus {
+      & + label {
+        top: 2px !important;
+        font-size: 11px !important;
+      }
+
+    }
+
+    &:disabled,
+    &:read-only  {
+      background-color: $cinza-light !important;
+      color: $primario-base;
+
+      & + label {
+        font-size: 11px;
+        top: 2px;
+        pointer-events: none;
+        width: fit-content;
+        height: fit-content;
+
+        span {
+          padding: {
+            left: 0px;
+            right: 0px;
+          }
+          background-color: transparent;
+        }
+      }
+    }
+
+  }
+
+  label {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font-size: $font-normal;
+    line-height: 21px;
+    color: $sucesso-base;
+
+    cursor: text;
+
+
+    transition: 0.2s ease-in-out;
+  }
+
+  .ng-valid {
+
+    border: 1.1px solid $primario-base !important;
+    color: $primario-base;
+
+    & + label {
+      top: 2px !important;
+      font-size: 11px !important;
+      color: $primario-base;
+    }
+  }
+
+  .ng-invalid.ng-touched {
+
+    border: 1.1px solid $erro-label !important;
+
+    & + label {
+      top: 2px !important;
+      font-size: 11px !important;
+      color: $erro-label;
+    }
+  }
+
+}
+

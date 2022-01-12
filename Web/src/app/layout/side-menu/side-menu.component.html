@@ -1,0 +1,20 @@
+<nav class="sidebar-nav">
+  <ul class="nav">
+
+    <li class="nav-item nav-dropdown" appNavDropdown [routerLinkActive]="['open']" [routerLinkActiveOptions]="{exact: true}" *ngFor="let item of menu">
+      <a *ngIf="item.children" class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle>
+        <i class="fa {{item.icon}}"></i> {{item.name}}
+      </a>
+      <a *ngIf="!item.children" class="nav-link" routerLinkActive="active" [routerLink]="item.route" [routerLinkActiveOptions]="{exact: true}">
+        <i class="fa {{item.icon}}"></i> {{item.name}}
+      </a>
+      <ul class="nav-dropdown-items" *ngIf="item.children">
+        <li class="nav-item" *ngFor="let child of item.children">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="child.route">
+            <i class="fa {{child.icon}}"></i> {{child.name}}
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,30 @@
+
+//CHROME e outros
+::-webkit-scrollbar              { 
+  width: 5px;
+  height: 6px;
+  background: $cinza-lighter;
+}
+::-webkit-scrollbar-button       { 
+  display: none;
+}
+::-webkit-scrollbar-track        {
+  background-color: $cinza-lighter;
+}
+::-webkit-scrollbar-thumb        { 
+  background: $primario-base;
+  border-left: 1px solid $cinza-lighter;
+}
+
+//IE
+
+// scrollbar-base-color: #C0C0C0;
+// scrollbar-base-color: #C0C0C0;
+// scrollbar-3dlight-color: #C0C0C0;
+// scrollbar-highlight-color: #C0C0C0;
+// scrollbar-track-color: #EBEBEB;
+// scrollbar-arrow-color: black;
+// scrollbar-shadow-color: #C0C0C0;
+// scrollbar-dark-shadow-color: #C0C0C0;
+
+

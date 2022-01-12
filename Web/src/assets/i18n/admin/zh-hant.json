@@ -1,0 +1,345 @@
+﻿{
+	"ABOUT":{
+		"TITLE" : "關於",
+		"MENU" : "關於",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"TITLE":"標題",
+				"IMAGE":"影像",
+				"DESCRIPTION":"描述",
+				"ACTIONS":"行動"
+			},
+			"BUTTON": {
+				"EDIT":"編輯",
+				"REMOVE":"刪除",
+				"DUPLICATE":"重複",
+				"NEW": "新增 關於"
+			},
+			"CONFIRM_DELETE":"是否確實要刪除此專案?",
+			"REMOVE": {
+				"SUCCESS":"關於 刪除",
+				"ERROR":"刪除時發生錯誤"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"重複",
+				"ERROR":"複製時發生錯誤"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"TITLE":"標題",
+				"IMAGE":"影像",
+				"DESCRIPTION":"描述",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"救",
+				"CANCEL":"取消"
+			},
+			"SAVE": {
+				"SUCCESS":"關於 :已成功儲存",
+				"ERROR":"儲存時發生錯誤"
+			}
+		}
+	},
+	"CONTACT":{
+		"TITLE" : "連絡",
+		"MENU" : "連絡",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"NAME":"名稱",
+				"PHONE_NUMBER":"電話號碼",
+				"EMAIL":"電子郵件",
+				"SUBJECT":"主題",
+				"MESSAGE":"訊息",
+				"ACTIONS":"行動"
+			},
+			"BUTTON": {
+				"EDIT":"編輯",
+				"REMOVE":"刪除",
+				"DUPLICATE":"重複",
+				"NEW": "新增 連絡"
+			},
+			"CONFIRM_DELETE":"是否確實要刪除此專案?",
+			"REMOVE": {
+				"SUCCESS":"連絡 刪除",
+				"ERROR":"刪除時發生錯誤"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"重複",
+				"ERROR":"複製時發生錯誤"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"NAME":"名稱",
+				"PHONE_NUMBER":"電話號碼",
+				"EMAIL":"電子郵件",
+				"SUBJECT":"主題",
+				"MESSAGE":"訊息",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"救",
+				"CANCEL":"取消"
+			},
+			"SAVE": {
+				"SUCCESS":"連絡 :已成功儲存",
+				"ERROR":"儲存時發生錯誤"
+			}
+		}
+	},
+	"LANGUAGE":{
+		"TITLE" : "語言",
+		"MENU" : "語言",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"CODE":"代碼",
+				"NAME":"名稱",
+				"IMAGE":"影像",
+				"ACTIVE":"積極",
+				"DEFAULT":"預設",
+				"LOADED":"載入",
+				"ACTIONS":"行動"
+			},
+			"BUTTON": {
+				"EDIT":"編輯",
+				"REMOVE":"刪除",
+				"DUPLICATE":"重複",
+				"NEW": "新增 語言"
+			},
+			"CONFIRM_DELETE":"是否確實要刪除此專案?",
+			"REMOVE": {
+				"SUCCESS":"語言 刪除",
+				"ERROR":"刪除時發生錯誤"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"重複",
+				"ERROR":"複製時發生錯誤"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"CODE":"代碼",
+				"NAME":"名稱",
+				"IMAGE":"影像",
+				"ACTIVE":"積極",
+				"DEFAULT":"預設",
+				"LOADED":"載入",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"救",
+				"CANCEL":"取消"
+			},
+			"SAVE": {
+				"SUCCESS":"語言 :已成功儲存",
+				"ERROR":"儲存時發生錯誤"
+			}
+		}
+	},
+	"MAILING":{
+		"TITLE" : "郵件",
+		"MENU" : "郵件",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"EMAIL":"電子郵件",
+				"ACTIVE":"積極",
+				"ACTIONS":"行動"
+			},
+			"BUTTON": {
+				"EDIT":"編輯",
+				"REMOVE":"刪除",
+				"DUPLICATE":"重複",
+				"NEW": "新增 郵件"
+			},
+			"CONFIRM_DELETE":"是否確實要刪除此專案?",
+			"REMOVE": {
+				"SUCCESS":"郵件 刪除",
+				"ERROR":"刪除時發生錯誤"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"重複",
+				"ERROR":"複製時發生錯誤"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"EMAIL":"電子郵件",
+				"ACTIVE":"積極",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"救",
+				"CANCEL":"取消"
+			},
+			"SAVE": {
+				"SUCCESS":"郵件 :已成功儲存",
+				"ERROR":"儲存時發生錯誤"
+			}
+		}
+	},
+	"SETTINGS":{
+		"TITLE" : "設定",
+		"MENU" : "設定",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"KEY":"我?",
+				"VALUE":"價值",
+				"ACTIONS":"行動"
+			},
+			"BUTTON": {
+				"EDIT":"編輯",
+				"REMOVE":"刪除",
+				"DUPLICATE":"重複",
+				"NEW": "新增 設定"
+			},
+			"CONFIRM_DELETE":"是否確實要刪除此專案?",
+			"REMOVE": {
+				"SUCCESS":"設定 刪除",
+				"ERROR":"刪除時發生錯誤"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"重複",
+				"ERROR":"複製時發生錯誤"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"KEY":"我?",
+				"VALUE":"價值",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"救",
+				"CANCEL":"取消"
+			},
+			"SAVE": {
+				"SUCCESS":"設定 :已成功儲存",
+				"ERROR":"儲存時發生錯誤"
+			}
+		}
+	},
+	"SOCIAL_NETWORK":{
+		"TITLE" : "社交網路",
+		"MENU" : "社交網路",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"NAME":"名稱",
+				"CSS_ICON":"CSS 圖示",
+				"URL":"網址",
+				"ACTIVE":"積極",
+				"ACTIONS":"行動"
+			},
+			"BUTTON": {
+				"EDIT":"編輯",
+				"REMOVE":"刪除",
+				"DUPLICATE":"重複",
+				"NEW": "新增 社交網路"
+			},
+			"CONFIRM_DELETE":"是否確實要刪除此專案?",
+			"REMOVE": {
+				"SUCCESS":"社交網路 刪除",
+				"ERROR":"刪除時發生錯誤"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"重複",
+				"ERROR":"複製時發生錯誤"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"NAME":"名稱",
+				"CSS_ICON":"CSS 圖示",
+				"URL":"網址",
+				"ACTIVE":"積極",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"救",
+				"CANCEL":"取消"
+			},
+			"SAVE": {
+				"SUCCESS":"社交網路 :已成功儲存",
+				"ERROR":"儲存時發生錯誤"
+			}
+		}
+	},
+	"UPLOAD_FILE":{
+		"TITLE" : "上傳檔案",
+		"MENU" : "上傳檔案",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"NAME":"名稱",
+				"INPUT_FILE_FIELD":"輸入檔案欄位",
+				"SIZE":"大小",
+				"TYPE":"類型",
+				"FILE_NAME":"檔案名稱",
+				"CONTROLLER":"控制器",
+				"EXTENSION":"延伸",
+				"ACTIONS":"行動"
+			},
+			"BUTTON": {
+				"EDIT":"編輯",
+				"REMOVE":"刪除",
+				"DUPLICATE":"重複",
+				"NEW": "新增 上傳檔案"
+			},
+			"CONFIRM_DELETE":"是否確實要刪除此專案?",
+			"REMOVE": {
+				"SUCCESS":"上傳檔案 刪除",
+				"ERROR":"刪除時發生錯誤"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"重複",
+				"ERROR":"複製時發生錯誤"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"NAME":"名稱",
+				"INPUT_FILE_FIELD":"輸入檔案欄位",
+				"SIZE":"大小",
+				"TYPE":"類型",
+				"FILE_NAME":"檔案名稱",
+				"CONTROLLER":"控制器",
+				"EXTENSION":"延伸",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"救",
+				"CANCEL":"取消"
+			},
+			"SAVE": {
+				"SUCCESS":"上傳檔案 :已成功儲存",
+				"ERROR":"儲存時發生錯誤"
+			}
+		}
+	},
+  "APP":{
+	"NAME":"",
+	"DIALOG":{
+		"CONFIRM":{
+			"TITLE":"確認"
+		},		
+		"OK":"還行",
+		"CANCEL":"取消"
+	},
+	"TOASTER":{
+		"TITLE":{
+			"SUCCESS":"成功",
+			"ERROR":"錯誤"
+		}
+	},
+	"UPLOAD":{
+		"BUTTON":"選擇檔案"
+	}
+  }
+}

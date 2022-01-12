@@ -1,0 +1,100 @@
+<div class="clearfix">
+
+  <!-- portlet -->
+  <div class="portlet">
+
+    <!-- portlet : header -->
+    <div class="portlet-header border-bottom">
+
+      <div class="float-end  mb-2">
+
+        <a (click)="new()" class="js-ajax btn btn-sm btn-primary btn-pill px-2 py-1 fs--15">
+          add
+        </a>
+
+      </div>
+
+
+    </div>
+    <!-- /portlet : header -->
+
+
+    <!-- portlet : body -->
+    <div class="portlet-body pt-0">
+
+
+      <form novalidate="" class="bs-validate" id="form_id" method="post" action="#!">
+
+        <input type="hidden" id="id" name="id" [(ngModel)]="artist.id"><!-- value populated by js -->
+
+        <div class="table-responsive">
+
+          <table class="table table-align-middle border-bottom mb-6" aria-describedby="form_id">
+
+            <thead>
+              <tr class="text-muted fs--13">
+                <th id="title-name" class="hidden-lg-down">Name</th>
+                <th id="title-action" class="hidden-lg-down"></th>
+              </tr>
+            </thead>
+
+            <tbody id="item_list">
+
+              <!-- item -->
+              <tr id="message_id_2" class="text-muted" *ngFor="let artist of paging.list">
+                <td class="hidden-lg-down">{{artist.name}}</td>
+                <td class="hidden-lg-down text-right">
+                  <a (click)="edit(artist)">
+                    <em class="fa fa-pencil text-success m-1 btn-action"></em>
+                  </a>
+                  <a (click)="remove(artist)">
+                    <em class="fa fa-trash text-danger m-1 btn-action"></em>
+                  </a>
+                </td>
+              </tr>
+              <!-- /item -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- options and pagination -->
+        <div class="col-12 col-xl-6">
+          <app-pagination [paging]="paging" (changePage)="loadArtists()"></app-pagination>
+        </div>
+      </form>
+
+    </div>
+    <!-- /portlet : body -->
+
+  </div>
+  <!-- /portlet -->
+
+</div>
+
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" *ngIf="!artist.id" id="modal-basic-title">Add artist</h4>
+    <h4 class="modal-title" *ngIf="artist.id" id="modal-basic-title">Edit artist</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="row">
+        <div class="col-sm-12">
+          <input type="hidden" #id id="id" name="id" [(ngModel)]="artist.id" >
+          <div class="form-label-group mt-2">
+            <label for="name">Name</label>
+            <input #name id="name" placeholder="name" name="name" [(ngModel)]="artist.name" class="form-control form-control-sm">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-sm btn-outline-secondary" (click)="modal.close('Cancel')">Cancel</button>
+    <button type="button" class="btn btn-sm btn-primary" (click)="save()" [disabled]="loading"> {{loading?'Saving':'Save'}}</button>
+  </div>
+</ng-template>

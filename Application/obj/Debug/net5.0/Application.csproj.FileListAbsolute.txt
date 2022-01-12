@@ -1,0 +1,16 @@
+D:\desenvolvimento\freeconcept\album\Application\bin\Debug\net5.0\Application.deps.json
+D:\desenvolvimento\freeconcept\album\Application\bin\Debug\net5.0\Application.dll
+D:\desenvolvimento\freeconcept\album\Application\bin\Debug\net5.0\ref\Application.dll
+D:\desenvolvimento\freeconcept\album\Application\bin\Debug\net5.0\Application.pdb
+D:\desenvolvimento\freeconcept\album\Application\bin\Debug\net5.0\CrossCutting.dll
+D:\desenvolvimento\freeconcept\album\Application\bin\Debug\net5.0\Domain.dll
+D:\desenvolvimento\freeconcept\album\Application\bin\Debug\net5.0\CrossCutting.pdb
+D:\desenvolvimento\freeconcept\album\Application\bin\Debug\net5.0\Domain.pdb
+D:\desenvolvimento\freeconcept\album\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+D:\desenvolvimento\freeconcept\album\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\desenvolvimento\freeconcept\album\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+D:\desenvolvimento\freeconcept\album\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+D:\desenvolvimento\freeconcept\album\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+D:\desenvolvimento\freeconcept\album\Application\obj\Debug\net5.0\Application.dll
+D:\desenvolvimento\freeconcept\album\Application\obj\Debug\net5.0\ref\Application.dll
+D:\desenvolvimento\freeconcept\album\Application\obj\Debug\net5.0\Application.pdb

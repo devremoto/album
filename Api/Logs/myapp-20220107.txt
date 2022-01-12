@@ -1,0 +1,137 @@
+2022-01-07T13:50:47.8279485-03:00  [INF] Entity Framework Core "5.0.4" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-01-07T13:50:48.7310029-03:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-01-07T13:50:48.7553789-03:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-01-07T13:50:48.7722164-03:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2022-01-07T13:50:49.1347030-03:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
+2022-01-07T13:50:49.1348674-03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-01-07T13:50:49.1352753-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-07T13:50:49.1353421-03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-07T13:50:49.1353601-03:00  [INF] Content root path: "D:\desenvolvimento\freeconcept\album\Api" (b5d60022)
+2022-01-07T13:50:49.6121546-03:00 0HMEHVNDTHQL3:00000001 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - - (ca22a1cb)
+2022-01-07T13:50:49.6654952-03:00 0HMEHVNDTHQL3:00000001 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 57.0383ms (791a596a)
+2022-01-07T13:50:49.6688706-03:00 0HMEHVNDTHQL3:00000003 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - (ca22a1cb)
+2022-01-07T13:50:49.7786811-03:00 0HMEHVNDTHQL3:00000003 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 109.7431ms (791a596a)
+2022-01-07T13:50:49.7945945-03:00 0HMEHVNDTHQL3:0000000B [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-01-07T13:50:49.7945946-03:00 0HMEHVNDTHQL3:00000005 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - (ca22a1cb)
+2022-01-07T13:50:49.7945946-03:00 0HMEHVNDTHQL3:00000007 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - (ca22a1cb)
+2022-01-07T13:50:49.7945947-03:00 0HMEHVNDTHQL3:00000009 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - (ca22a1cb)
+2022-01-07T13:50:49.7974484-03:00 0HMEHVNDTHQL3:0000000B [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 3073 application/javascript;+charset=utf-8 2.6194ms (791a596a)
+2022-01-07T13:50:49.8154109-03:00 0HMEHVNDTHQL3:00000009 [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' (27b0a520)
+2022-01-07T13:50:49.8154110-03:00 0HMEHVNDTHQL3:00000005 [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2022-01-07T13:50:49.8154109-03:00 0HMEHVNDTHQL3:00000007 [INF] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' (27b0a520)
+2022-01-07T13:50:49.8180298-03:00 0HMEHVNDTHQL3:00000005 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 23.3994ms (791a596a)
+2022-01-07T13:50:49.8180334-03:00 0HMEHVNDTHQL3:00000007 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 23.4627ms (791a596a)
+2022-01-07T13:50:49.8180274-03:00 0HMEHVNDTHQL3:00000009 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 23.4277ms (791a596a)
+2022-01-07T13:50:50.2534380-03:00 0HMEHVNDTHQL3:0000000D [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - (ca22a1cb)
+2022-01-07T13:50:50.3538967-03:00 0HMEHVNDTHQL3:0000000D [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.5176ms (791a596a)
+2022-01-07T13:51:26.2990718-03:00  [INF] Entity Framework Core "5.0.4" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-01-07T13:51:26.4998190-03:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2022-01-07T13:51:26.5217765-03:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2022-01-07T13:51:26.5330307-03:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2022-01-07T13:51:26.8462326-03:00  [FTL] Unable to start Kestrel. (fc6a528d)
+System.IO.IOException: Failed to bind to address https://127.0.0.1:5001: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.<Bind>g__BindSocket|13_0(<>c__DisplayClass13_0& )
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass29_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2022-01-07T13:51:56.2216460-03:00 0HMEHVNDTHQL4:00000003 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/album?number=1&size=5&orderDirection=ASC&maxSize=10 - - (ca22a1cb)
+2022-01-07T13:51:56.2216461-03:00 0HMEHVNDTHQL4:00000005 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/albumType - - (ca22a1cb)
+2022-01-07T13:51:56.2216461-03:00 0HMEHVNDTHQL4:00000001 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/artist - - (ca22a1cb)
+2022-01-07T13:51:56.2216860-03:00 0HMEHVNDTHQL4:00000007 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/album?number=1&size=5&orderDirection=ASC&maxSize=10&query= - - (ca22a1cb)
+2022-01-07T13:51:56.2268785-03:00 0HMEHVNDTHQL4:00000007 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T13:51:56.2269670-03:00 0HMEHVNDTHQL4:00000005 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T13:51:56.2269630-03:00 0HMEHVNDTHQL4:00000001 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T13:51:56.2269771-03:00 0HMEHVNDTHQL4:00000003 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T13:51:56.2289270-03:00 0HMEHVNDTHQL4:00000007 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/album?number=1&size=5&orderDirection=ASC&maxSize=10&query= - - - 204 - - 7.2302ms (791a596a)
+2022-01-07T13:51:56.2289175-03:00 0HMEHVNDTHQL4:00000005 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/albumType - - - 204 - - 7.2562ms (791a596a)
+2022-01-07T13:51:56.2289587-03:00 0HMEHVNDTHQL4:00000001 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/artist - - - 204 - - 7.3741ms (791a596a)
+2022-01-07T13:51:56.2289707-03:00 0HMEHVNDTHQL4:00000003 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/album?number=1&size=5&orderDirection=ASC&maxSize=10 - - - 204 - - 7.3538ms (791a596a)
+2022-01-07T13:51:56.2311767-03:00 0HMEHVNDTHQL4:00000009 [INF] Request starting HTTP/2 GET https://localhost:5001/api/albumType - - (ca22a1cb)
+2022-01-07T13:51:56.2311767-03:00 0HMEHVNDTHQL4:0000000B [INF] Request starting HTTP/2 GET https://localhost:5001/api/album?number=1&size=5&orderDirection=ASC&maxSize=10 - - (ca22a1cb)
+2022-01-07T13:51:56.2312078-03:00 0HMEHVNDTHQL4:0000000D [INF] Request starting HTTP/2 GET https://localhost:5001/api/album?number=1&size=5&orderDirection=ASC&maxSize=10&query= - - (ca22a1cb)
+2022-01-07T13:51:56.2312122-03:00 0HMEHVNDTHQL4:0000000F [INF] Request starting HTTP/2 GET https://localhost:5001/api/artist - - (ca22a1cb)
+2022-01-07T13:51:56.2313500-03:00 0HMEHVNDTHQL4:0000000D [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T13:51:56.2313697-03:00 0HMEHVNDTHQL4:0000000F [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T13:51:56.2313697-03:00 0HMEHVNDTHQL4:0000000B [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T13:51:56.2313714-03:00 0HMEHVNDTHQL4:00000009 [INF] CORS policy execution successful. (5409d6ef)
+2022-01-07T13:51:56.2606239-03:00 0HMEHVNDTHQL4:0000000D [INF] Executing endpoint '"Api.Controllers.AlbumController.Get (Api)"' (500cc934)
+2022-01-07T13:51:56.2606299-03:00 0HMEHVNDTHQL4:0000000B [INF] Executing endpoint '"Api.Controllers.AlbumController.Get (Api)"' (500cc934)
+2022-01-07T13:51:56.2606209-03:00 0HMEHVNDTHQL4:0000000F [INF] Executing endpoint '"Api.Controllers.ArtistController.Get (Api)"' (500cc934)
+2022-01-07T13:51:56.2606395-03:00 0HMEHVNDTHQL4:00000009 [INF] Executing endpoint '"Api.Controllers.AlbumTypeController.Get (Api)"' (500cc934)
+2022-01-07T13:51:56.3001665-03:00 0HMEHVNDTHQL4:0000000B [INF] Route matched with "{action = \"Get\", controller = \"Album\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Application.ViewModels.Common.PagingViewModel`1[Application.ViewModels.AlbumViewModel])" on controller "Api.Controllers.AlbumController" ("Api"). (122b2fdf)
+2022-01-07T13:51:56.3001664-03:00 0HMEHVNDTHQL4:0000000D [INF] Route matched with "{action = \"Get\", controller = \"Album\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Application.ViewModels.Common.PagingViewModel`1[Application.ViewModels.AlbumViewModel])" on controller "Api.Controllers.AlbumController" ("Api"). (122b2fdf)
+2022-01-07T13:51:56.3001663-03:00 0HMEHVNDTHQL4:00000009 [INF] Route matched with "{action = \"Get\", controller = \"AlbumType\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Application.ViewModels.Common.PagingViewModel`1[Application.ViewModels.AlbumTypeViewModel])" on controller "Api.Controllers.AlbumTypeController" ("Api"). (122b2fdf)
+2022-01-07T13:51:56.3001709-03:00 0HMEHVNDTHQL4:0000000F [INF] Route matched with "{action = \"Get\", controller = \"Artist\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Application.ViewModels.Common.PagingViewModel`1[Application.ViewModels.ArtistViewModel])" on controller "Api.Controllers.ArtistController" ("Api"). (122b2fdf)
+2022-01-07T13:51:56.3041949-03:00 0HMEHVNDTHQL4:00000009 [INF] Entity Framework Core "5.0.4" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-01-07T13:51:56.3041950-03:00 0HMEHVNDTHQL4:0000000F [INF] Entity Framework Core "5.0.4" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-01-07T13:51:56.3041949-03:00 0HMEHVNDTHQL4:0000000D [INF] Entity Framework Core "5.0.4" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-01-07T13:51:56.3041949-03:00 0HMEHVNDTHQL4:0000000B [INF] Entity Framework Core "5.0.4" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2022-01-07T13:51:56.8086056-03:00 0HMEHVNDTHQL4:0000000B [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AddedIn], [a].[AlbumTypeId], [a].[ArtistId], [a].[LastModified], [a].[Stock], [a].[Title], [a0].[Id], [a0].[AddedIn], [a0].[LastModified], [a0].[Name], [a1].[Id], [a1].[AddedIn], [a1].[LastModified], [a1].[Name]
+FROM [Album] AS [a]
+INNER JOIN [Artist] AS [a0] ON [a].[ArtistId] = [a0].[Id]
+INNER JOIN [AlbumType] AS [a1] ON [a].[AlbumTypeId] = [a1].[Id]" (0723d8ff)
+2022-01-07T13:51:56.8086005-03:00 0HMEHVNDTHQL4:0000000D [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AddedIn], [a].[AlbumTypeId], [a].[ArtistId], [a].[LastModified], [a].[Stock], [a].[Title], [a0].[Id], [a0].[AddedIn], [a0].[LastModified], [a0].[Name], [a1].[Id], [a1].[AddedIn], [a1].[LastModified], [a1].[Name]
+FROM [Album] AS [a]
+INNER JOIN [Artist] AS [a0] ON [a].[ArtistId] = [a0].[Id]
+INNER JOIN [AlbumType] AS [a1] ON [a].[AlbumTypeId] = [a1].[Id]" (0723d8ff)
+2022-01-07T13:51:56.8087118-03:00 0HMEHVNDTHQL4:0000000F [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AddedIn], [a].[LastModified], [a].[Name]
+FROM [Artist] AS [a]" (0723d8ff)
+2022-01-07T13:51:56.8087185-03:00 0HMEHVNDTHQL4:00000009 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AddedIn], [a].[LastModified], [a].[Name]
+FROM [AlbumType] AS [a]" (0723d8ff)
+2022-01-07T13:51:56.8267109-03:00 0HMEHVNDTHQL4:0000000B [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AddedIn], [a].[AlbumTypeId], [a].[ArtistId], [a].[LastModified], [a].[Stock], [a].[Title], [a0].[Id], [a0].[AddedIn], [a0].[LastModified], [a0].[Name], [a1].[Id], [a1].[AddedIn], [a1].[LastModified], [a1].[Name]
+FROM [Album] AS [a]
+INNER JOIN [Artist] AS [a0] ON [a].[ArtistId] = [a0].[Id]
+INNER JOIN [AlbumType] AS [a1] ON [a].[AlbumTypeId] = [a1].[Id]" (0723d8ff)
+2022-01-07T13:51:56.8267268-03:00 0HMEHVNDTHQL4:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AddedIn], [a].[AlbumTypeId], [a].[ArtistId], [a].[LastModified], [a].[Stock], [a].[Title], [a0].[Id], [a0].[AddedIn], [a0].[LastModified], [a0].[Name], [a1].[Id], [a1].[AddedIn], [a1].[LastModified], [a1].[Name]
+FROM [Album] AS [a]
+INNER JOIN [Artist] AS [a0] ON [a].[ArtistId] = [a0].[Id]
+INNER JOIN [AlbumType] AS [a1] ON [a].[AlbumTypeId] = [a1].[Id]" (0723d8ff)
+2022-01-07T13:51:56.8275503-03:00 0HMEHVNDTHQL4:0000000F [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Domain.Entities.Artist, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T13:51:56.8275541-03:00 0HMEHVNDTHQL4:00000009 [INF] Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[Domain.Entities.AlbumType, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T13:51:56.8736076-03:00 0HMEHVNDTHQL4:0000000D [INF] Executing "OkObjectResult", writing value of type '"Application.ViewModels.Common.PagingViewModel`1[[Application.ViewModels.AlbumViewModel, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T13:51:56.8736027-03:00 0HMEHVNDTHQL4:0000000B [INF] Executing "OkObjectResult", writing value of type '"Application.ViewModels.Common.PagingViewModel`1[[Application.ViewModels.AlbumViewModel, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-01-07T13:51:56.9284473-03:00 0HMEHVNDTHQL4:0000000D [INF] Executed action "Api.Controllers.AlbumController.Get (Api)" in 624.4864ms (afa2e885)
+2022-01-07T13:51:56.9284788-03:00 0HMEHVNDTHQL4:0000000F [INF] Executed action "Api.Controllers.ArtistController.Get (Api)" in 626.0603ms (afa2e885)
+2022-01-07T13:51:56.9285104-03:00 0HMEHVNDTHQL4:00000009 [INF] Executed action "Api.Controllers.AlbumTypeController.Get (Api)" in 626.0713ms (afa2e885)
+2022-01-07T13:51:56.9285120-03:00 0HMEHVNDTHQL4:0000000B [INF] Executed action "Api.Controllers.AlbumController.Get (Api)" in 624.4711ms (afa2e885)
+2022-01-07T13:51:56.9285268-03:00 0HMEHVNDTHQL4:0000000D [INF] Executed endpoint '"Api.Controllers.AlbumController.Get (Api)"' (99874f2b)
+2022-01-07T13:51:56.9285441-03:00 0HMEHVNDTHQL4:0000000B [INF] Executed endpoint '"Api.Controllers.AlbumController.Get (Api)"' (99874f2b)
+2022-01-07T13:51:56.9289481-03:00 0HMEHVNDTHQL4:0000000F [INF] Executed endpoint '"Api.Controllers.ArtistController.Get (Api)"' (99874f2b)
+2022-01-07T13:51:56.9289453-03:00 0HMEHVNDTHQL4:00000009 [INF] Executed endpoint '"Api.Controllers.AlbumTypeController.Get (Api)"' (99874f2b)
+2022-01-07T13:51:56.9298235-03:00 0HMEHVNDTHQL4:0000000D [INF] Request finished HTTP/2 GET https://localhost:5001/api/album?number=1&size=5&orderDirection=ASC&maxSize=10&query= - - - 200 749 application/json;+charset=utf-8 698.5858ms (791a596a)
+2022-01-07T13:51:56.9298576-03:00 0HMEHVNDTHQL4:0000000F [INF] Request finished HTTP/2 GET https://localhost:5001/api/artist - - - 200 64 application/json;+charset=utf-8 698.6337ms (791a596a)
+2022-01-07T13:51:56.9298573-03:00 0HMEHVNDTHQL4:00000009 [INF] Request finished HTTP/2 GET https://localhost:5001/api/albumType - - - 200 120 application/json;+charset=utf-8 698.7166ms (791a596a)
+2022-01-07T13:51:56.9298550-03:00 0HMEHVNDTHQL4:0000000B [INF] Request finished HTTP/2 GET https://localhost:5001/api/album?number=1&size=5&orderDirection=ASC&maxSize=10 - - - 200 749 application/json;+charset=utf-8 698.6621ms (791a596a)

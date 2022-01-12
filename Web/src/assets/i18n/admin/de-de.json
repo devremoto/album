@@ -1,0 +1,345 @@
+﻿{
+	"ABOUT":{
+		"TITLE" : "ÜBER",
+		"MENU" : "Über",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"TITLE":"TITEL",
+				"IMAGE":"BILD",
+				"DESCRIPTION":"BESCHREIBUNG",
+				"ACTIONS":"Aktionen"
+			},
+			"BUTTON": {
+				"EDIT":"Bearbeiten",
+				"REMOVE":"Löschen",
+				"DUPLICATE":"Doppelte",
+				"NEW": "Hinzufügen ÜBER"
+			},
+			"CONFIRM_DELETE":"Möchten Sie dieses Element wirklich entfernen?",
+			"REMOVE": {
+				"SUCCESS":"Über Entfernt",
+				"ERROR":"Fehler beim Entfernen"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliziert",
+				"ERROR":"Fehler beim Duplizieren"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"TITLE":"TITEL",
+				"IMAGE":"BILD",
+				"DESCRIPTION":"BESCHREIBUNG",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"Speichern",
+				"CANCEL":"Abbrechen"
+			},
+			"SAVE": {
+				"SUCCESS":"Über : erfolgreich gespeichert",
+				"ERROR":"Fehler beim Speichern"
+			}
+		}
+	},
+	"CONTACT":{
+		"TITLE" : "KONTAKT",
+		"MENU" : "Kontakt",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"NAME":"NAMEN",
+				"PHONE_NUMBER":"TELEFONNUMMER",
+				"EMAIL":"E-MAIL",
+				"SUBJECT":"BETREFF",
+				"MESSAGE":"NACHRICHT",
+				"ACTIONS":"Aktionen"
+			},
+			"BUTTON": {
+				"EDIT":"Bearbeiten",
+				"REMOVE":"Löschen",
+				"DUPLICATE":"Doppelte",
+				"NEW": "Hinzufügen KONTAKT"
+			},
+			"CONFIRM_DELETE":"Möchten Sie dieses Element wirklich entfernen?",
+			"REMOVE": {
+				"SUCCESS":"Kontakt Entfernt",
+				"ERROR":"Fehler beim Entfernen"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliziert",
+				"ERROR":"Fehler beim Duplizieren"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"NAME":"NAMEN",
+				"PHONE_NUMBER":"TELEFONNUMMER",
+				"EMAIL":"E-MAIL",
+				"SUBJECT":"BETREFF",
+				"MESSAGE":"NACHRICHT",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"Speichern",
+				"CANCEL":"Abbrechen"
+			},
+			"SAVE": {
+				"SUCCESS":"Kontakt : erfolgreich gespeichert",
+				"ERROR":"Fehler beim Speichern"
+			}
+		}
+	},
+	"LANGUAGE":{
+		"TITLE" : "SPRACHE",
+		"MENU" : "Sprache",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"CODE":"CODE",
+				"NAME":"NAMEN",
+				"IMAGE":"BILD",
+				"ACTIVE":"AKTIV",
+				"DEFAULT":"STANDARD",
+				"LOADED":"GELADEN",
+				"ACTIONS":"Aktionen"
+			},
+			"BUTTON": {
+				"EDIT":"Bearbeiten",
+				"REMOVE":"Löschen",
+				"DUPLICATE":"Doppelte",
+				"NEW": "Hinzufügen SPRACHE"
+			},
+			"CONFIRM_DELETE":"Möchten Sie dieses Element wirklich entfernen?",
+			"REMOVE": {
+				"SUCCESS":"Sprache Entfernt",
+				"ERROR":"Fehler beim Entfernen"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliziert",
+				"ERROR":"Fehler beim Duplizieren"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"CODE":"CODE",
+				"NAME":"NAMEN",
+				"IMAGE":"BILD",
+				"ACTIVE":"AKTIV",
+				"DEFAULT":"STANDARD",
+				"LOADED":"GELADEN",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"Speichern",
+				"CANCEL":"Abbrechen"
+			},
+			"SAVE": {
+				"SUCCESS":"Sprache : erfolgreich gespeichert",
+				"ERROR":"Fehler beim Speichern"
+			}
+		}
+	},
+	"MAILING":{
+		"TITLE" : "MAILING",
+		"MENU" : "Mailing",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"EMAIL":"E-MAIL",
+				"ACTIVE":"AKTIV",
+				"ACTIONS":"Aktionen"
+			},
+			"BUTTON": {
+				"EDIT":"Bearbeiten",
+				"REMOVE":"Löschen",
+				"DUPLICATE":"Doppelte",
+				"NEW": "Hinzufügen MAILING"
+			},
+			"CONFIRM_DELETE":"Möchten Sie dieses Element wirklich entfernen?",
+			"REMOVE": {
+				"SUCCESS":"Mailing Entfernt",
+				"ERROR":"Fehler beim Entfernen"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliziert",
+				"ERROR":"Fehler beim Duplizieren"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"EMAIL":"E-MAIL",
+				"ACTIVE":"AKTIV",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"Speichern",
+				"CANCEL":"Abbrechen"
+			},
+			"SAVE": {
+				"SUCCESS":"Mailing : erfolgreich gespeichert",
+				"ERROR":"Fehler beim Speichern"
+			}
+		}
+	},
+	"SETTINGS":{
+		"TITLE" : "EINSTELLUNGEN",
+		"MENU" : "Einstellungen",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"KEY":"SCHLÜSSEL",
+				"VALUE":"WERT",
+				"ACTIONS":"Aktionen"
+			},
+			"BUTTON": {
+				"EDIT":"Bearbeiten",
+				"REMOVE":"Löschen",
+				"DUPLICATE":"Doppelte",
+				"NEW": "Hinzufügen EINSTELLUNGEN"
+			},
+			"CONFIRM_DELETE":"Möchten Sie dieses Element wirklich entfernen?",
+			"REMOVE": {
+				"SUCCESS":"Einstellungen Entfernt",
+				"ERROR":"Fehler beim Entfernen"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliziert",
+				"ERROR":"Fehler beim Duplizieren"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"KEY":"SCHLÜSSEL",
+				"VALUE":"WERT",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"Speichern",
+				"CANCEL":"Abbrechen"
+			},
+			"SAVE": {
+				"SUCCESS":"Einstellungen : erfolgreich gespeichert",
+				"ERROR":"Fehler beim Speichern"
+			}
+		}
+	},
+	"SOCIAL_NETWORK":{
+		"TITLE" : "SOZIALES NETZWERK",
+		"MENU" : "Soziales Netzwerk",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"NAME":"NAMEN",
+				"CSS_ICON":"CSS ICON",
+				"URL":"URL",
+				"ACTIVE":"AKTIV",
+				"ACTIONS":"Aktionen"
+			},
+			"BUTTON": {
+				"EDIT":"Bearbeiten",
+				"REMOVE":"Löschen",
+				"DUPLICATE":"Doppelte",
+				"NEW": "Hinzufügen SOZIALES NETZWERK"
+			},
+			"CONFIRM_DELETE":"Möchten Sie dieses Element wirklich entfernen?",
+			"REMOVE": {
+				"SUCCESS":"Soziales Netzwerk Entfernt",
+				"ERROR":"Fehler beim Entfernen"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliziert",
+				"ERROR":"Fehler beim Duplizieren"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"NAME":"NAMEN",
+				"CSS_ICON":"CSS ICON",
+				"URL":"URL",
+				"ACTIVE":"AKTIV",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"Speichern",
+				"CANCEL":"Abbrechen"
+			},
+			"SAVE": {
+				"SUCCESS":"Soziales Netzwerk : erfolgreich gespeichert",
+				"ERROR":"Fehler beim Speichern"
+			}
+		}
+	},
+	"UPLOAD_FILE":{
+		"TITLE" : "DATEI HOCHLADEN",
+		"MENU" : "Datei hochladen",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"NAME":"NAMEN",
+				"INPUT_FILE_FIELD":"EINGABEDATEIFELD",
+				"SIZE":"GRÖßE",
+				"TYPE":"TYP",
+				"FILE_NAME":"DATEINAME",
+				"CONTROLLER":"CONTROLLER",
+				"EXTENSION":"ERWEITERUNG",
+				"ACTIONS":"Aktionen"
+			},
+			"BUTTON": {
+				"EDIT":"Bearbeiten",
+				"REMOVE":"Löschen",
+				"DUPLICATE":"Doppelte",
+				"NEW": "Hinzufügen DATEI HOCHLADEN"
+			},
+			"CONFIRM_DELETE":"Möchten Sie dieses Element wirklich entfernen?",
+			"REMOVE": {
+				"SUCCESS":"Datei hochladen Entfernt",
+				"ERROR":"Fehler beim Entfernen"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliziert",
+				"ERROR":"Fehler beim Duplizieren"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"NAME":"NAMEN",
+				"INPUT_FILE_FIELD":"EINGABEDATEIFELD",
+				"SIZE":"GRÖßE",
+				"TYPE":"TYP",
+				"FILE_NAME":"DATEINAME",
+				"CONTROLLER":"CONTROLLER",
+				"EXTENSION":"ERWEITERUNG",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"Speichern",
+				"CANCEL":"Abbrechen"
+			},
+			"SAVE": {
+				"SUCCESS":"Datei hochladen : erfolgreich gespeichert",
+				"ERROR":"Fehler beim Speichern"
+			}
+		}
+	},
+  "APP":{
+	"NAME":"",
+	"DIALOG":{
+		"CONFIRM":{
+			"TITLE":"Bestätigung"
+		},		
+		"OK":"Okay",
+		"CANCEL":"Abbrechen"
+	},
+	"TOASTER":{
+		"TITLE":{
+			"SUCCESS":"Erfolg",
+			"ERROR":"Fehler"
+		}
+	},
+	"UPLOAD":{
+		"BUTTON":"Auswählen einer Datei"
+	}
+  }
+}

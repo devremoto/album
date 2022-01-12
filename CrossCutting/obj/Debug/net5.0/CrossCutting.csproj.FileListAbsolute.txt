@@ -1,0 +1,14 @@
+D:\desenvolvimento\freeconcept\album\CrossCutting\bin\Debug\net5.0\CrossCutting.deps.json
+D:\desenvolvimento\freeconcept\album\CrossCutting\bin\Debug\net5.0\CrossCutting.dll
+D:\desenvolvimento\freeconcept\album\CrossCutting\bin\Debug\net5.0\ref\CrossCutting.dll
+D:\desenvolvimento\freeconcept\album\CrossCutting\bin\Debug\net5.0\CrossCutting.pdb
+D:\desenvolvimento\freeconcept\album\CrossCutting\bin\Debug\net5.0\Domain.dll
+D:\desenvolvimento\freeconcept\album\CrossCutting\bin\Debug\net5.0\Domain.pdb
+D:\desenvolvimento\freeconcept\album\CrossCutting\obj\Debug\net5.0\CrossCutting.csproj.AssemblyReference.cache
+D:\desenvolvimento\freeconcept\album\CrossCutting\obj\Debug\net5.0\CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+D:\desenvolvimento\freeconcept\album\CrossCutting\obj\Debug\net5.0\CrossCutting.AssemblyInfoInputs.cache
+D:\desenvolvimento\freeconcept\album\CrossCutting\obj\Debug\net5.0\CrossCutting.AssemblyInfo.cs
+D:\desenvolvimento\freeconcept\album\CrossCutting\obj\Debug\net5.0\CrossCutting.csproj.CoreCompileInputs.cache
+D:\desenvolvimento\freeconcept\album\CrossCutting\obj\Debug\net5.0\CrossCutting.dll
+D:\desenvolvimento\freeconcept\album\CrossCutting\obj\Debug\net5.0\ref\CrossCutting.dll
+D:\desenvolvimento\freeconcept\album\CrossCutting\obj\Debug\net5.0\CrossCutting.pdb

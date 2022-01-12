@@ -1,0 +1,6 @@
+.card {
+  max-width: 100% !important;
+}
+.card-body {
+  min-height: 73px;
+}

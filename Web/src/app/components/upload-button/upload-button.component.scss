@@ -1,0 +1,23 @@
+::ng-deep {
+  label {
+    &:hover {
+      .label {
+        font-weight: bold;
+      }
+      .fa-upload {
+        color: green;
+      }
+    }
+  }
+  .fa-download {
+    &:hover {
+      color: blue;
+    }
+  }
+
+  .fa-trash {
+    &:hover {
+      color: red;
+    }
+  }
+}

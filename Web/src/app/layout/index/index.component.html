@@ -1,0 +1,50 @@
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+<link rel="stylesheet" type="text/css" href="https://npmcdn.com/angular2-toaster@5.0.0/toaster.css" />
+
+<!-- Icons -->
+<link href="/assets/admin/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/admin/css/simple-line-icons.css" rel="stylesheet">
+<!-- Main styles for this application -->
+<link href="/assets/admin/css/style.css" rel="stylesheet">
+
+<app-admin-header></app-admin-header>
+<div class="app-body">
+  <div class="sidebar">
+    <app-side-menu></app-side-menu>
+  </div>
+  <!-- Main content -->
+  <main class="main">
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb" app-breadcrumbs [fixed]="true" style="border-radius: 0;">
+      <!-- <li class="breadcrumb-menu d-md-down-none">
+        <a class="btn" [routerLink]="['language-settings']">
+          <i class="fa fa-language"></i>
+        </a>
+        <a class="btn" [routerLink]="['']">
+          <i class="icon-speech"></i>
+        </a>
+        <a class="btn" [routerLink]="['dashboard']">
+          <i class="icon-graph"></i> &nbsp;{{"HOME.HEADER.BREAD_CRUMB.DASHBOARD"|translate}}
+        </a>
+        <a class="btn" [routerLink]="['app-settings']">
+          <i class="icon-settings"></i> &nbsp;{{"HOME.HEADER.BREAD_CRUMB.SETTINGS"|translate}}
+        </a>
+      </li> -->
+    </ol>
+    <div class="container-fluid">
+      <div class="animated fadeIn">
+        <div class="card">
+          <div class="card-body">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <aside class="aside-menu">
+
+  </aside>
+</div>
+<app-admin-footer></app-admin-footer>

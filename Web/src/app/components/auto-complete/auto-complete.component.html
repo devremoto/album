@@ -1,0 +1,58 @@
+<ng-template #rt let-r="result" let-t="term">
+  <div class="p-2">
+    <ngb-highlight [result]="r[property]" [term]="t"></ngb-highlight>
+  </div>
+</ng-template>
+
+<div class="form-label-group">
+  <label [for]="id" *ngIf="label">{{ label }}</label>
+  <div
+    class="input-group"
+    [ngClass]="{
+      'input-group-sm': size === 'sm',
+      'input-group-lg': size === 'lg'
+    }"
+  >
+    <input
+      [id]="id"
+      type="text"
+      class="form-control form-sontrol-sm"
+      [ngClass]="{
+        'form-control-sm': size === 'sm',
+        'form-control-lg': size === 'lg'
+      }"
+      #element
+      [placeholder]="placeholder"
+      [name]="id"
+      [disabled]="disabled"
+      [(ngModel)]="model"
+      [ngbTypeahead]="search"
+      [resultTemplate]="rt"
+      [editable]="editable"
+      [inputFormatter]="formatter"
+      (selectItem)="selectItem($event)"
+    />
+
+    <div class="input-group-append">
+      <div
+        ngbDropdown
+        class="d-inline-block"
+        display="dynamic"
+        [placement]="placement"
+      >
+        <button class="btn btn-sm btn-primary" ngbDropdownToggle></button>
+        <div ngbDropdownMenu class="menu" aria-labelledby="dropdownBasic2">
+          <div
+            class="p-2 item"
+            ngbDropdownItem
+            *ngFor="let listItem of items"
+            [title]="listItem[property]"
+            (click)="select(listItem)"
+          >
+            {{ limit(listItem[property]) }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

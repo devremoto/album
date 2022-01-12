@@ -1,0 +1,125 @@
+/* ------------------------------ CORES ------------------------------ */
+
+//Variações de Branco
+$branco-base:                           #FFFFFF;
+$branco-dark:                           #F9F9F9;
+
+//Variações COR PRIMÁRIA
+$primario-base:                         #007648;
+$primario-bold:                         #1C3440;
+$primario-light:                        #E5F5FF;
+
+//Variações COR SECUNDÁRIA
+$secundario-base:                       #dd0000;
+
+
+//BTN-HOVER
+$primario-hover:                        rgb(11, 93, 43);
+$primario-lighter-hover:                rgba(0, 73, 132, 0.2);
+$primario-light-hover:                  rgba(0, 73, 132, 0.08);
+
+$secundario-hover:                      rgba(221, 0, 0,0.75);
+$secundario-light-hover:                rgba(221, 0, 0,0.08);
+
+//Variações de CINZA
+$preto:                                 #000000;
+$cinza-dark:                            #313136;
+$cinza-darkness:                        #707070;
+$cinza-semi-dark:                       #B5B5B5;
+$cinza-base:                            #666;
+$cinza-light:                           #ECECF6;
+$cinza-lighter:                         #D8D8D8;
+$cinza-lightness:                       #FAFAFA;
+$cinza-disabled:                        #999999;
+$branco:                                #FFFFFF;
+$branco-70:                             rgba(255, 255, 255, 0.7);
+$branco-20:                             rgba(255, 255, 255, 0.2);
+
+//Variações de PRETO
+$preto-87:                              rgba(0, 0, 0, 0.87);
+$preto-50:                              rgba(0, 0, 0, 0.5);
+$preto-24:                              rgba(0, 0, 0, 0.24);
+$preto-14:                              rgba(0, 0, 0, 0.14);
+$preto-12:                              rgba(0, 0, 0, 0.12);
+$preto-04:                              rgba(0, 0, 0, 0.04);
+
+
+//Variações COR ERRO
+$erro-base:                             #BE4F4F;
+$erro-label:                            #FF0000;
+
+
+//Variações Verde
+$sucesso-base:                          #007648;
+$sucesso-light:                         #43BB47;
+
+
+//Variações Amarelo
+$alerta-base:                          #FFE200;
+
+//Variações Laranja
+$laranja-base:                         #FF8900;
+
+
+
+//border Color
+$border-head-table:                     rgba(171, 171, 179, 0.7);
+$border-breadcrumb:                     rgba(171, 171, 179, 0.3);
+$border-card:                           rgba(171, 171, 179, 0.2);
+
+
+//Modal background Color
+$modal-background-color:                rgba(28, 52, 64, 0.75);
+
+/* ------------------------------ TAMANHOS ------------------------------ */
+
+//Botoes
+$btn-size:                              43px;
+
+//Input
+$input-size:                            56px;
+
+//header e body spaces
+$space-header-breadcrumb:               20px;
+$space-body:                            40px;
+
+//Espaços
+$space-1x:                              8px;
+$space-2x:                              16px;
+$space-3x:                              24px;
+$space-4x:                              32px;
+$space-5x:                              40px;
+
+//text-field space
+$space-left-text:                       16px;
+$space-right-text:                      12px;
+$space-bottom-area:                     12px;
+
+//Font-Sizes
+$font-h1:                               22pt;
+$font-h2:                               16pt;
+$font-h3:                               14pt;
+
+$font-big:                              13pt;
+$font-normal:                           12pt;
+$font-small:                            10pt;
+$font-button:                           14px;
+$font-xs:                               9pt;
+$font-xxs:                              7pt;
+
+//Icones
+$icone-1x:                              18px;
+$icone-2x:                              20px;
+$icone-3x:                              24px;
+$icone-4x:                              32px;
+
+
+$header-size:                           50px;
+
+/* ------------------------------ WEIGHT ------------------------------ */
+
+$weight-light:                          200;
+$weight-normal:                         400;
+$weight-semi-bold:                      550;
+$weight-bold:                           700;
+$weight-bolder:                         900;

@@ -1,0 +1,216 @@
+<div class="clearfix">
+
+  <!-- portlet -->
+  <div class="portlet">
+
+    <!-- portlet : header -->
+    <div class="portlet-header border-bottom">
+
+      <div class="float-end  mb-2">
+
+        <a (click)="new()" class="js-ajax btn btn-sm btn-primary btn-pill px-2 py-1 fs--15">
+         add
+        </a>
+
+      </div>
+
+
+    </div>
+    <p-table
+    #dt
+    [lazy]="true"
+    [value]="paging?.list"
+    dataKey="id"
+    styleClass="p-datatable p-datatable-gridlines p-datatable-sm"
+    [paginator]="paging?.size < paging?.totalCount"
+    [rows]="paging?.size"
+    (onLazyLoad)="loadAlbums($event)"
+    [showCurrentPageReport]="false"
+    [totalRecords]="paging?.totalCount"
+    [loading]="loading"
+  >
+    <ng-template pTemplate="header" *ngIf="paging?.list">
+      <tr class="text-muted fs--13">
+        <th scope="row" class="hidden-lg-down text-sm" pSortableColumn="title">
+          Title
+          <p-columnFilter
+            display="menu"
+            type="text"
+            [showMatchModes]="false"
+            [showOperator]="false"
+            [showAddButton]="false"
+            field="title"
+          ></p-columnFilter>
+        </th>
+        <th scope="row" class="hidden-lg-down text-sm" pSortableColumn="artist.name">
+          Artits
+          <p-columnFilter
+            display="menu"
+            type="text"
+            [showMatchModes]="false"
+            [showOperator]="false"
+            [showAddButton]="false"
+            field="artist.name"
+          ></p-columnFilter>
+        </th>
+
+        <th scope="row" class="hidden-lg-down text-sm" pSortableColumn="albumType.name">
+          Album Type
+          <p-columnFilter
+            display="menu"
+            type="text"
+            [showMatchModes]="false"
+            [showOperator]="false"
+            [showAddButton]="false"
+            field="albumType.name"
+          ></p-columnFilter>
+        </th>
+
+        <th scope="row" class="hidden-lg-down text-sm" pSortableColumn="stock">
+          Stock
+          <p-columnFilter
+            display="menu"
+            type="text"
+            [showMatchModes]="false"
+            [showOperator]="false"
+            [showAddButton]="false"
+            field="stock"
+          ></p-columnFilter>
+        </th>
+
+        <th scope="row" class="hidden-lg-down text-sm"></th>
+      </tr>
+    </ng-template>
+
+    <ng-template
+      pTemplate="body"
+      let-album
+      id="item_list"
+      let-expanded="expanded"
+    >
+      <!-- item -->
+      <tr id="message_id_2" class="text-muted">
+        <td class="text-sm">
+          {{ album?.title }}
+        </td>
+
+        <td class="text-sm">
+          {{ album?.artist?.name }}
+        </td>
+
+        <td class="text-sm">
+          {{ album?.albumType?.name }}
+        </td>
+
+        <td class="text-sm">
+          {{ album?.stock }}
+        </td>
+
+        <td class="text-center">
+          <a (click)="edit(album)">
+            <em class="fa fa-pencil text-success m-1 btn-action"></em>
+          </a>
+          <a (click)="remove(album)">
+            <em class="fa fa-trash text-danger m-1 btn-action"></em>
+          </a>
+        </td>
+      </tr>
+      <!-- /item -->
+    </ng-template>
+  </p-table>
+    <!-- /portlet : header -->
+
+
+
+
+  </div>
+  <!-- /portlet -->
+
+</div>
+
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" *ngIf="!album.id" id="modal-basic-title">Add album</h4>
+    <h4 class="modal-title" *ngIf="album.id" id="modal-basic-title">Edit album</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="row">
+        <div class="col-sm-12">
+          <input type="hidden" #id id="id" name="id" [(ngModel)]="album.id" >
+          <div class="form-label-group mt-2">
+            <label for="name">Title</label>
+            <input #name id="name" placeholder="name" name="name" [(ngModel)]="album.title" class="form-control form-control-sm">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-label-group mt-2">
+            <label for="stock">Artist</label>
+            <select
+          id="artistId"
+          [disabled]="!artists?.length"
+          placeholder="Artist"
+          name="artistId"
+          [(ngModel)]="album.artistId"
+          class="form-control form-control-sm"
+        >
+          <option
+            value="0"
+          >
+           Select a type
+          </option>
+          <option *ngFor="let artist of artists" [value]="artist?.id">
+            {{ artist?.name }}
+          </option>
+        </select>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-label-group mt-2">
+            <label for="name">Type</label>
+            <select
+          id="albumTypeId"
+          [disabled]="!albumTypes?.length"
+          placeholder="Album TYpe"
+          name="albumTypeId"
+          [(ngModel)]="album.albumTypeId"
+          class="form-control form-control-sm"
+        >
+          <option
+            value="0"
+          >
+            Select a type
+          </option>
+          <option *ngFor="let albumType of albumTypes" [value]="albumType?.id">
+            {{ albumType?.name }}
+          </option>
+        </select>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-label-group mt-2">
+            <label for="name">Stock</label>
+            <input #stock id="stock" placeholder="stock" name="stock" [(ngModel)]="album.stock" class="form-control form-control-sm">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-sm btn-outline-secondary" (click)="modal.close('Cancel')">Cancel</button>
+    <button type="button" class="btn btn-sm btn-primary" (click)="save()" [disabled]="loading"> {{loading?'Saving':'Save'}}</button>
+  </div>
+</ng-template>

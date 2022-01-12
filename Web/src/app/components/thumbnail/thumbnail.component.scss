@@ -1,0 +1,118 @@
+@import "/src/sass/variables";
+
+.thumb {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.remove::after,
+.remove {
+  z-index: 10000;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  color: darkred;
+  left: 0;
+  top: 6px;
+  vertical-align: center;
+  align-content: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  color: red;
+}
+
+.remove::after {
+  left: 0;
+  top: 0;
+}
+
+.remove:hover::after {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  height: 100%;
+  width: 100%;
+  background-color: $preto-50;
+  .modal-area {
+    width: 500px;
+
+    .card {
+      transition: all 0.3s ease;
+
+      .header-icon-sucessso {
+        position: absolute;
+        top: -40px;
+        left: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+        background-color: $branco;
+        border: 5px solid $sucesso-base;
+        border-radius: 50%;
+        color: $sucesso-base;
+        font-size: 36px;
+        opacity: 1;
+      }
+
+      .header-icon-danger {
+        position: absolute;
+        top: -40px;
+        left: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+        background-color: $branco;
+        border: 5px solid $erro-label;
+        border-radius: 50%;
+        color: $erro-label;
+        font-size: 36px;
+        opacity: 1;
+      }
+
+      .texto-sucesso {
+        color: $sucesso-base;
+      }
+
+      .texto-danger {
+        color: $erro-label;
+      }
+
+      .card-header {
+        background-color: $primario-base;
+        color: $branco;
+        span {
+          cursor: pointer;
+        }
+      }
+      .card-body {
+        background-color: $branco;
+        color: $cinza-base;
+        h3 {
+          font-size: $font-h1;
+          font-weight: $weight-normal;
+        }
+        p {
+          color: $cinza-dark;
+          font-size: $font-normal;
+        }
+      }
+      .card-footer {
+        background-color: $branco;
+        border: 1px solid $border-card;
+      }
+    }
+  }
+}

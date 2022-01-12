@@ -1,0 +1,15 @@
+<div class="input-group input-group-sm">
+  <input class="form-control form-control-sm" [placeholder]="placeholder" [disabled]="disabled"
+    [name]="name"
+    [maxDate]="maxDateModel"
+    [minDate]="minDateModel"
+    [id]="id"
+    [(ngModel)]="componentModel"
+    ngbDatepicker #c="ngbDatepicker"
+    (change)="inputChange($event.target.value)"
+    (blur)="inputChange($event.target.value)"
+    (dateSelect)="dateSelect($event);" />
+  <div class="input-group-append" (click)="toggle(c)">
+    <span class="btn {{btnClass}} text-center"><em class="fa fa-calendar"></em> </span>
+  </div>
+</div>

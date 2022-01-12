@@ -1,0 +1,345 @@
+﻿{
+	"ABOUT":{
+		"TITLE" : "SUR",
+		"MENU" : "Sur",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"TITLE":"TITRE",
+				"IMAGE":"IMAGE",
+				"DESCRIPTION":"DESCRIPTION",
+				"ACTIONS":"Actions"
+			},
+			"BUTTON": {
+				"EDIT":"Modifier",
+				"REMOVE":"Supprimer",
+				"DUPLICATE":"Double",
+				"NEW": "Ajouter SUR"
+			},
+			"CONFIRM_DELETE":"Voulez-vous vraiment supprimer cet article?",
+			"REMOVE": {
+				"SUCCESS":"Sur Enlevé",
+				"ERROR":"Erreur lors de la suppression"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliqué",
+				"ERROR":"Erreur tout en dupliquant"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"TITLE":"TITRE",
+				"IMAGE":"IMAGE",
+				"DESCRIPTION":"DESCRIPTION",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"sauvegarder",
+				"CANCEL":"Annuler"
+			},
+			"SAVE": {
+				"SUCCESS":"Sur : sauvé avec succès",
+				"ERROR":"Erreur tout en économisant"
+			}
+		}
+	},
+	"CONTACT":{
+		"TITLE" : "CONTACT",
+		"MENU" : "Contact",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"NAME":"NOM",
+				"PHONE_NUMBER":"NUMÉRO DE TÉLÉPHONE",
+				"EMAIL":"MESSAGERIE ÉLECTRONIQUE",
+				"SUBJECT":"OBJET",
+				"MESSAGE":"MESSAGE",
+				"ACTIONS":"Actions"
+			},
+			"BUTTON": {
+				"EDIT":"Modifier",
+				"REMOVE":"Supprimer",
+				"DUPLICATE":"Double",
+				"NEW": "Ajouter CONTACT"
+			},
+			"CONFIRM_DELETE":"Voulez-vous vraiment supprimer cet article?",
+			"REMOVE": {
+				"SUCCESS":"Contact Enlevé",
+				"ERROR":"Erreur lors de la suppression"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliqué",
+				"ERROR":"Erreur tout en dupliquant"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"NAME":"NOM",
+				"PHONE_NUMBER":"NUMÉRO DE TÉLÉPHONE",
+				"EMAIL":"MESSAGERIE ÉLECTRONIQUE",
+				"SUBJECT":"OBJET",
+				"MESSAGE":"MESSAGE",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"sauvegarder",
+				"CANCEL":"Annuler"
+			},
+			"SAVE": {
+				"SUCCESS":"Contact : sauvé avec succès",
+				"ERROR":"Erreur tout en économisant"
+			}
+		}
+	},
+	"LANGUAGE":{
+		"TITLE" : "LANGUE",
+		"MENU" : "Langue",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"CODE":"CODE",
+				"NAME":"NOM",
+				"IMAGE":"IMAGE",
+				"ACTIVE":"ACTIVE",
+				"DEFAULT":"PAR DÉFAUT",
+				"LOADED":"CHARGÉ",
+				"ACTIONS":"Actions"
+			},
+			"BUTTON": {
+				"EDIT":"Modifier",
+				"REMOVE":"Supprimer",
+				"DUPLICATE":"Double",
+				"NEW": "Ajouter LANGUE"
+			},
+			"CONFIRM_DELETE":"Voulez-vous vraiment supprimer cet article?",
+			"REMOVE": {
+				"SUCCESS":"Langue Enlevé",
+				"ERROR":"Erreur lors de la suppression"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliqué",
+				"ERROR":"Erreur tout en dupliquant"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"CODE":"CODE",
+				"NAME":"NOM",
+				"IMAGE":"IMAGE",
+				"ACTIVE":"ACTIVE",
+				"DEFAULT":"PAR DÉFAUT",
+				"LOADED":"CHARGÉ",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"sauvegarder",
+				"CANCEL":"Annuler"
+			},
+			"SAVE": {
+				"SUCCESS":"Langue : sauvé avec succès",
+				"ERROR":"Erreur tout en économisant"
+			}
+		}
+	},
+	"MAILING":{
+		"TITLE" : "DIFFUSION",
+		"MENU" : "Diffusion",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"EMAIL":"MESSAGERIE ÉLECTRONIQUE",
+				"ACTIVE":"ACTIVE",
+				"ACTIONS":"Actions"
+			},
+			"BUTTON": {
+				"EDIT":"Modifier",
+				"REMOVE":"Supprimer",
+				"DUPLICATE":"Double",
+				"NEW": "Ajouter DIFFUSION"
+			},
+			"CONFIRM_DELETE":"Voulez-vous vraiment supprimer cet article?",
+			"REMOVE": {
+				"SUCCESS":"Diffusion Enlevé",
+				"ERROR":"Erreur lors de la suppression"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliqué",
+				"ERROR":"Erreur tout en dupliquant"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"EMAIL":"MESSAGERIE ÉLECTRONIQUE",
+				"ACTIVE":"ACTIVE",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"sauvegarder",
+				"CANCEL":"Annuler"
+			},
+			"SAVE": {
+				"SUCCESS":"Diffusion : sauvé avec succès",
+				"ERROR":"Erreur tout en économisant"
+			}
+		}
+	},
+	"SETTINGS":{
+		"TITLE" : "PARAMÈTRES",
+		"MENU" : "Paramètres",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"KEY":"CLÉ",
+				"VALUE":"VALEUR",
+				"ACTIONS":"Actions"
+			},
+			"BUTTON": {
+				"EDIT":"Modifier",
+				"REMOVE":"Supprimer",
+				"DUPLICATE":"Double",
+				"NEW": "Ajouter PARAMÈTRES"
+			},
+			"CONFIRM_DELETE":"Voulez-vous vraiment supprimer cet article?",
+			"REMOVE": {
+				"SUCCESS":"Paramètres Enlevé",
+				"ERROR":"Erreur lors de la suppression"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliqué",
+				"ERROR":"Erreur tout en dupliquant"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"KEY":"CLÉ",
+				"VALUE":"VALEUR",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"sauvegarder",
+				"CANCEL":"Annuler"
+			},
+			"SAVE": {
+				"SUCCESS":"Paramètres : sauvé avec succès",
+				"ERROR":"Erreur tout en économisant"
+			}
+		}
+	},
+	"SOCIAL_NETWORK":{
+		"TITLE" : "RÉSEAU SOCIAL",
+		"MENU" : "Réseau social",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"NAME":"NOM",
+				"CSS_ICON":"ICÔNE CSS",
+				"URL":"URL",
+				"ACTIVE":"ACTIVE",
+				"ACTIONS":"Actions"
+			},
+			"BUTTON": {
+				"EDIT":"Modifier",
+				"REMOVE":"Supprimer",
+				"DUPLICATE":"Double",
+				"NEW": "Ajouter RÉSEAU SOCIAL"
+			},
+			"CONFIRM_DELETE":"Voulez-vous vraiment supprimer cet article?",
+			"REMOVE": {
+				"SUCCESS":"Réseau social Enlevé",
+				"ERROR":"Erreur lors de la suppression"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliqué",
+				"ERROR":"Erreur tout en dupliquant"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"NAME":"NOM",
+				"CSS_ICON":"ICÔNE CSS",
+				"URL":"URL",
+				"ACTIVE":"ACTIVE",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"sauvegarder",
+				"CANCEL":"Annuler"
+			},
+			"SAVE": {
+				"SUCCESS":"Réseau social : sauvé avec succès",
+				"ERROR":"Erreur tout en économisant"
+			}
+		}
+	},
+	"UPLOAD_FILE":{
+		"TITLE" : "FICHIER DE TÉLÉCHARGEMENT",
+		"MENU" : "Fichier de téléchargement",
+		"GRID" : {
+			"COLUMN" : {		
+				"ID":"ID",
+				"NAME":"NOM",
+				"INPUT_FILE_FIELD":"CHAMP DE FICHIERS D’ENTRÉE",
+				"SIZE":"TAILLE",
+				"TYPE":"TYPE",
+				"FILE_NAME":"NOM DU FICHIER",
+				"CONTROLLER":"CONTRÔLEUR",
+				"EXTENSION":"EXTENSION",
+				"ACTIONS":"Actions"
+			},
+			"BUTTON": {
+				"EDIT":"Modifier",
+				"REMOVE":"Supprimer",
+				"DUPLICATE":"Double",
+				"NEW": "Ajouter FICHIER DE TÉLÉCHARGEMENT"
+			},
+			"CONFIRM_DELETE":"Voulez-vous vraiment supprimer cet article?",
+			"REMOVE": {
+				"SUCCESS":"Fichier de téléchargement Enlevé",
+				"ERROR":"Erreur lors de la suppression"
+			},
+			"DUPLICATE": {
+				"SUCCESS":"Dupliqué",
+				"ERROR":"Erreur tout en dupliquant"
+			}
+		},
+		"FORM" : {
+			"LABEL" : {	
+				"NAME":"NOM",
+				"INPUT_FILE_FIELD":"CHAMP DE FICHIERS D’ENTRÉE",
+				"SIZE":"TAILLE",
+				"TYPE":"TYPE",
+				"FILE_NAME":"NOM DU FICHIER",
+				"CONTROLLER":"CONTRÔLEUR",
+				"EXTENSION":"EXTENSION",
+				"ID":"ID"
+			},
+			"BUTTON": {
+				"SAVE":"sauvegarder",
+				"CANCEL":"Annuler"
+			},
+			"SAVE": {
+				"SUCCESS":"Fichier de téléchargement : sauvé avec succès",
+				"ERROR":"Erreur tout en économisant"
+			}
+		}
+	},
+  "APP":{
+	"NAME":"",
+	"DIALOG":{
+		"CONFIRM":{
+			"TITLE":"Confirmation"
+		},		
+		"OK":"D'accord",
+		"CANCEL":"Annuler"
+	},
+	"TOASTER":{
+		"TITLE":{
+			"SUCCESS":"Succès",
+			"ERROR":"Erreur"
+		}
+	},
+	"UPLOAD":{
+		"BUTTON":"Sélectionnez un fichier"
+	}
+  }
+}

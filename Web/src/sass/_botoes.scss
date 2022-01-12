@@ -1,0 +1,218 @@
+/* PRIMÁRIO */
+.btn-alta-enfase-primario {
+    height: $btn-size;
+    color: $branco;
+    background-color: $primario-base;
+    border: 1px solid $primario-base;
+    border-radius: 4px;
+    box-shadow: 0 3px 4px $preto-14;
+    font: {
+        size: $font-button;
+        weight: $weight-normal;
+    }
+    padding: {
+        left: $space-1x;
+        right:  $space-1x;
+    }
+    &:hover {
+        background-color: $primario-hover;
+    }
+    &:disabled {
+        background-color: $cinza-lighter;
+        color: $cinza-semi-dark;
+        border: 1px solid $cinza-lighter;
+    }
+}
+
+.btn-media-enfase-primario {
+    height: $btn-size;
+    color: $primario-base;
+    background-color: transparent;
+    border: 1px solid $primario-base;
+    border-radius: 4px;
+    font: {
+        size: $font-button;
+        weight: $weight-normal;
+    }
+    padding: {
+        left: $space-1x;
+        right:  $space-1x;
+    }
+    &:hover {
+        background-color: $primario-light-hover;
+    }
+    &:disabled {
+        background-color: transparent;
+        color: $cinza-lighter;
+        border: 1px solid $cinza-lighter;
+    }
+}
+
+.btn-baixa-enfase-primario {
+    height: $btn-size;
+    color: $primario-base;
+    background-color: transparent;
+    border: 0;
+    font: {
+        size: $font-button;
+        weight: $weight-semi-bold;
+    }
+    padding: {
+        left: $space-1x;
+        right:  $space-1x;
+    }
+    &:hover {
+        background-color: $primario-light-hover;
+    }
+    &:disabled {
+        background-color: transparent;
+        color: $cinza-lighter;
+    }
+}
+
+
+/* VERDE */
+.btn-alta-enfase-verde {
+    height: $btn-size;
+    color: $branco;
+    background-color: $sucesso-base;
+    border: 1px solid $sucesso-base;
+    border-radius: 4px;
+    box-shadow: 0 3px 4px $preto-14;
+    font: {
+        size: $font-button;
+        weight: $weight-normal;
+    }
+    padding: {
+        left: $space-1x;
+        right:  $space-1x;
+    }
+    &:hover {
+        background-color: rgba(0, 128, 0,0.75)
+    }
+    &:disabled {
+        background-color: $cinza-lighter;
+        color: $cinza-semi-dark;
+        border: 1px solid $cinza-lighter;
+    }
+}
+
+.btn-media-enfase-verde {
+    height: $btn-size;
+    color: $sucesso-base;
+    background-color: transparent;
+    border: 1px solid $sucesso-base;
+    border-radius: 4px;
+    font: {
+        size: $font-button;
+        weight: $weight-normal;
+    }
+    padding: {
+        left: $space-1x;
+        right:  $space-1x;
+    }
+    &:hover {
+        background-color: $sucesso-base;
+        color: $branco;
+    }
+    &:disabled {
+        background-color: transparent;
+        color: $cinza-lighter;
+        border: 1px solid $cinza-lighter;
+    }
+}
+
+.btn-baixa-enfase-verde {
+    height: $btn-size;
+    color: $sucesso-base;
+    background-color: transparent;
+    border: 0;
+    font: {
+        size: $font-button;
+        weight: $weight-semi-bold;
+    }
+    padding: {
+        left: $space-1x;
+        right:  $space-1x;
+    }
+    &:hover {
+        background-color: $sucesso-base;
+    }
+    &:disabled {
+        background-color: transparent;
+        color: $cinza-lighter;
+    }
+}
+
+
+/* VERMELHO */
+.btn-alta-enfase-vermelho {
+    height: $btn-size;
+    color: $branco;
+    background-color: $erro-label;
+    border: 1px solid $erro-label;
+    border-radius: 4px;
+    box-shadow: 0 3px 4px $preto-14;
+    font: {
+        size: $font-button;
+        weight: $weight-normal;
+    }
+    padding: {
+        left: $space-1x;
+        right:  $space-1x;
+    }
+    &:hover {
+        background-color: $erro-label;
+    }
+    &:disabled {
+        background-color: $cinza-lighter;
+        color: $cinza-semi-dark;
+        border: 1px solid $cinza-lighter;
+    }
+}
+
+.btn-media-enfase-vermelho {
+    height: $btn-size;
+    color: $erro-label;
+    background-color: transparent;
+    border: 1px solid $erro-label;
+    border-radius: 4px;
+    font: {
+        size: $font-button;
+        weight: $weight-normal;
+    }
+    padding: {
+        left: $space-1x;
+        right:  $space-1x;
+    }
+    &:hover {
+        background-color: rgba(255,0,0,.15);
+    }
+    &:disabled {
+        background-color: transparent;
+        color: $cinza-lighter;
+        border: 1px solid $cinza-lighter;
+    }
+}
+
+.btn-baixa-enfase-vermelho {
+    height: $btn-size;
+    color: $erro-label;
+    background-color: transparent;
+    border: 0;
+    font: {
+        size: $font-button;
+        weight: $weight-semi-bold;
+    }
+    padding: {
+        left: $space-1x;
+        right:  $space-1x;
+    }
+    &:hover {
+        background-color: $erro-label;
+    }
+    &:disabled {
+        background-color: transparent;
+        color: $cinza-lighter;
+    }
+}

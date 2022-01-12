@@ -1,0 +1,33 @@
+.breadcrumb {
+    font-size: $font-small;
+    color: $cinza-dark;
+    border-bottom: 1px solid $border-breadcrumb;
+    padding: {
+        top: 12.5px;
+        bottom: 12.5px;
+    }
+    a {
+        color: $cinza-dark;
+        &:hover {
+            color: $cinza-dark;
+        }
+    }
+    .breadcrumb-item.active {
+        color: $primario-base;
+        font-weight: bold;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: '>';
+        color: $cinza-dark;
+    }
+}
+
+.breadcrumb {
+    p {
+
+    }
+
+    a {
+
+    }
+}

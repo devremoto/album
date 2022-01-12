@@ -1,0 +1,14 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{title}}</h4>
+</div>
+<div class="modal-body">
+  {{message}}
+</div>
+<div class="modal-footer" *ngIf="!isConfirm">
+  <button type="button" class="btn btn-{{windowClass}}" appEnter (click)="close(true)">ok</button>
+</div>
+
+<div class="modal-footer" *ngIf="isConfirm">
+  <button type="button" class="btn btn-default" (click)="confirm(false)">cancel</button>
+  <button type="button" class="btn btn-{{windowClass}}" appEnter (click)="confirm(true)">ok</button>
+</div>
