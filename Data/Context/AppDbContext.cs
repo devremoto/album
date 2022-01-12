@@ -15,13 +15,12 @@ namespace Infra.Data.Context
         #region DBSet
 
         public DbSet<Album> Album { get; set; }
-        	public DbSet<Artist> Artist { get; set; }
-	public DbSet<AlbumType> AlbumType { get; set; }
-#endregion DbSet
+        public DbSet<Artist> Artist { get; set; }
+        public DbSet<AlbumType> AlbumType { get; set; }
+        #endregion DbSet
         public AppDbContext()
         {
         }
-
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -34,8 +33,9 @@ namespace Infra.Data.Context
 
             modelBuilder.ApplyConfiguration(new AlbumMap());
             modelBuilder.ApplyConfiguration(new ArtistMap());
-modelBuilder.ApplyConfiguration(new AlbumTypeMap());
-#endregion MAP
+            modelBuilder.ApplyConfiguration(new AlbumTypeMap());
+            modelBuilder.ApplyConfiguration(new AlbumTypeMap());
+            #endregion MAP
 
             if (_useMap)
                 foreach (var entityType in modelBuilder.Model.GetEntityTypes())
@@ -48,6 +48,11 @@ modelBuilder.ApplyConfiguration(new AlbumTypeMap());
                     }
                 }
 
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.EnableSensitiveDataLogging();
         }
 
         public override int SaveChanges()

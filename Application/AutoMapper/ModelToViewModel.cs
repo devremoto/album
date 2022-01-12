@@ -24,7 +24,11 @@ namespace Application.AutoMapper
             CreateMap<AlbumType, AlbumTypeViewModel>().ReverseMap();
             #endregion
 
-            #endregion AutoMapper
+            #region AlbumType
+CreateMap<AlbumType, AlbumTypeViewModel>().ReverseMap();
+#endregion
+
+#endregion AutoMapper
         }
     }
 }

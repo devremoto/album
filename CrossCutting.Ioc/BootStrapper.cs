@@ -225,18 +225,18 @@ namespace CrossCutting.Ioc
 
         public static IServiceCollection AddSqlite<TContext>(this IServiceCollection services, ILoggerFactory factory = null) where TContext : DbContext
         {
-            //services.AddDbContext<TContext>(options =>
-            //{
-            //    options.UseSqlite(_settings.ConnectionStrings.Sqlite, opts =>
-            //    {
-            //    });
-            //    if (_settings.EnableSensitiveDataLogging)
-            //    {
-            //        options.EnableSensitiveDataLogging();
-            //        if (factory != null)
-            //            options.UseLoggerFactory(factory);
-            //    }
-            //});
+            services.AddDbContext<TContext>(options =>
+            {
+                options.UseSqlite(_settings.ConnectionStrings.Sqlite, opts =>
+                {
+                });
+                if (_settings.EnableSensitiveDataLogging)
+                {
+                    options.EnableSensitiveDataLogging();
+                    if (factory != null)
+                        options.UseLoggerFactory(factory);
+                }
+            });
             return services;
 
         }
